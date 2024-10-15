@@ -1,0 +1,50 @@
+.message-box {
+    .modal-content {
+        border: 0px;        
+        background-color: #eff8ec;        
+        #id_message_box_header_icon {
+            float: left;
+            font-size: 1.3333rem;
+            padding-right: 0.6667rem;
+        }
+        .modal-body {
+            padding: 0 !important;
+            border-top-right-radius: 1.875rem;
+            .message-box-header-info {
+                color: white;  
+                background-color: #5c5c5c;
+            }
+            .message-box-header-success {
+                color: white;  
+                background-color:  #51ac37;
+            }
+            .message-box-header-warning {
+                color: white;  
+                background-color: #f4901f;
+            }
+            .message-box-header-error {
+                color: white;  
+                background-color: #bd2130;
+            }
+            .message-box-body {
+                margin: 0;
+                padding-top: 10px;
+            }
+            .message-box-button {
+                right: 5px;
+                bottom: 0px;
+                width: 75px;
+                margin: 2px;
+                font-size: 12px;
+                font-weight: 400 !important;
+                background-color: white;
+                color: black !important;
+                border-color: #5a5a5a3b !important;
+                &:hover{
+                    cursor: pointer;
+                    filter: brightness(90%);
+                }    
+            }        
+        }
+    }
+}

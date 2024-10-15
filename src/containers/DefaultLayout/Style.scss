@@ -1,0 +1,323 @@
+/*-- App header bar --*/
+.default-app-header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 55px;
+    z-index: 1020;
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    background-color: #fff;
+    justify-content: space-between;
+    border-bottom: 1px solid #c8ced3;
+}
+
+/*-- App header logo & title container --*/
+.app-header-logo-container {
+    float: left;
+}
+
+/*-- App header logo --*/
+.app-header-logo {
+    float: left;
+    width: 89px;
+    height: 35px;
+    margin-left: 12px;
+    margin-top: 8px;
+}
+
+/*-- App header navigation menu button --*/
+.app-header-menu-toggler {
+    float: left;
+    font-size: 25px;
+    color: #797979;
+    margin-left: 18px;
+    text-shadow: 3px 4px 3px #27263452;
+}
+.app-header-menu-toggler:hover {
+    cursor: pointer;
+    font-size: 28px;
+    color: #797979;
+}
+
+/*-- App header user image --*/
+.app-header-user_image {
+    height: 45px !important;
+    margin: 0px 10px;
+    max-width: 100%;
+    border: solid 1px #c3c3c357;
+    border-radius: 50em;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*-- page loading area --*/
+.default-app-content {
+    padding-top: 110px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*-- app footer --*/
+.default-app-footer {
+    bottom: 0px;
+    width: 100%;
+    padding: 8px;
+    z-index: 1020;
+    font-size: 12px;
+    text-align: right;
+    position: fixed;
+    background: #f0f3f5;
+    border-top: 1px solid #c8ced3;
+}
+
+/**-- sidebar --*/
+.default-sidebar {
+    top: 55px;
+    margin: 0;
+    padding: 0;
+    z-index: 1015;
+    background-color: #2f353a;
+    position: absolute;
+    height: 100vh;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.default-navbar {
+    font-size: 13px;
+    font-weight: 400;
+    text-shadow: none;
+    letter-spacing: 0.02em;
+}
+.sidebar-menu-close {
+    width: 0;
+}
+.sidebar-menu-open {
+    width: 200px;
+}
+.nav-item ul {
+    margin: 0;
+    padding: 0;
+}
+.nav-item .main-menu {
+    display: none;
+}
+#tm:checked + .main-menu {
+    display: block;
+}
+.nav-item input[type="checkbox"],
+.nav-item ul span.drop-icon {
+    display: none;
+}
+.nav-item li,
+#toggle-menu,
+.nav-item .sub-menu {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.05);
+}
+.nav-item li,
+#toggle-menu {
+    border-width: 0 0 1px;
+}
+.nav-item .sub-menu {
+    background-color: #333;
+    border-width: 1px 1px 0;
+    margin: 0 1em;
+}
+.nav-item .sub-menu li:last-child {
+    border-width: 0;
+}
+.nav-item,
+#toggle-menu {
+    background-color: #333;
+}
+.nav-item a {
+    transition: all 0.125s ease-in-out;
+    -webkit-transition: all 0.125s ease-in-out;
+}
+.nav-item a:hover {
+    filter: brightness(80%);
+    cursor: pointer !important;
+}
+.nav-title:hover {
+    cursor: pointer;
+}
+.nav-icon {
+    font-size: 15px;
+    margin-right: 8px;
+}
+.nav-item .drop-icon {
+    line-height: 1;
+}
+#toggle-menu,
+.nav-item a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#toggle-menu .drop-icon,
+.nav-item li label.drop-icon {
+    position: absolute;
+    right: 0.5em;
+    top: 1em;
+}
+.nav-item li,
+#toggle-menu,
+.nav-item a {
+    position: relative;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.125);
+}
+.nav-item label.drop-icon,
+#toggle-menu span.drop-icon {
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.125);
+    text-shadow: 0 0 0 transparent;
+    color: rgba(255, 255, 255, 0.67);
+}
+.nav-item .sub-menu {
+    display: none;
+}
+.nav-item input[type="checkbox"]:checked + .sub-menu {
+    display: block;
+}
+/**-- End of sidebar --*/
+
+/*-- breadcrumb --*/
+.default-breadcrumb {
+    top: 55px;
+    height: 42px;
+    width: -webkit-fill-available;
+    z-index: 1010;
+    position: fixed;
+    align-items: center;
+    flex-direction: row;
+    background-color: #60bb46;
+    border-bottom: 1px solid #c8ced3;
+}
+
+/*-- Breadcrumb home --*/
+.default-breadcrumb-home {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    padding-right: 10px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    float: left;
+    border-radius: 5px;
+    background-color: #60bb46;
+}
+.default-breadcrumb-home:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+    background-color: #60bb46 !important;
+}
+
+/*-- Breadcrumb home icon --*/
+.default-breadcrumb-home-icon {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 200px;
+    background: #28a745;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.12), 0 0 4px 3px rgba(0, 0, 0, 0.24);
+}
+
+/*-- Breadcrumb arrow icon --*/
+.default-breadcrumb-arrow {
+    font-size: 40px;
+    color: #8ed67a;
+    padding: -1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-shadow: 1px 1px 15px #272634c2;
+}
+
+/*-- Breadcrumb item --*/
+.default-breadcrumb-item {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-top: 10px;
+    float: left;
+}
+
+/*-- Override default styles --*/
+:root {
+    font-size: 14px;
+}
+
+/*-- Form body --*/
+body {
+    font-size: 12px;
+}
+
+/*-- Form control --*/
+.form-control {
+    height: 28px;
+    font-size: 12px;
+}
+
+/*-- Card --*/
+.card {
+    margin-bottom: 1.5rem;
+}
+
+/*-- Card header --*/
+.card-header {
+    font-size: 12px;
+    font-weight: 450;
+    line-height: 8px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    background-color: #60bb46;
+    padding: 8px 20px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/*-- Button --*/
+.btn {
+    padding: 6px !important;
+    font-size: 12px !important;
+}
+
+/**-- Mobile view styles --*/
+@media (max-width: 720px) {
+    .app-header-user_image {
+        height: 40px !important;
+        margin: 0px 5px !important;
+    }    
+    .app-header-logo {
+        width: 100px !important;
+        height: 28px !important;
+        margin-left: 8px !important;
+    }
+    .app-header-user-popup {
+        right: 45px !important;
+        width: 150px !important;
+        height: 80px !important;
+    }
+    .user-popup-image-container {
+        height: 100px !important;
+    }
+    .user-popup-image {
+        height: 80px !important;
+    }
+}
+/**-- End of mobile view styles --*/
