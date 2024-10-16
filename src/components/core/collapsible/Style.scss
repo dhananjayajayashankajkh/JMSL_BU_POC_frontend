@@ -1,0 +1,23 @@
+%icon-styles {
+    border: 0;
+    float: right;
+    color: white;
+    transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    &:hover {
+        cursor: pointer;
+        color: white !important;
+    }
+}
+
+.collapsible-open {
+    @extend %icon-styles;
+}
+
+.collapsible-close {
+    @extend %icon-styles;
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
