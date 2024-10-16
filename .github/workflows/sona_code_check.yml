@@ -1,7 +1,13 @@
-
 name: "sonar_cloud_scan_github_actions"
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
+      - development
+      - release
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   DemoSonarCloudSCan:
